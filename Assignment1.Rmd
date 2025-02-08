@@ -21,6 +21,8 @@ names(Typical_Employee_Survey_Data)[9] <- "Pride"
 names(Typical_Employee_Survey_Data)[10] <- "Loyalty"
 names(Typical_Employee_Survey_Data)[11] <- "Collaboration"
 
+head(Typical_Employee_Survey_Data)
+
 fivenum(Typical_Employee_Survey_Data$Age)
 boxplot(Typical_Employee_Survey_Data$Age, main= "Age")
 axis(2, at = seq(floor(min(Typical_Employee_Survey_Data$Age)/5)*5, ceiling(max(Typical_Employee_Survey_Data$Age)/5)*5, by = 5))
@@ -105,7 +107,7 @@ plot(Typical_Employee_Survey_Data$Years_Worked, Typical_Employee_Survey_Data$Loy
 plot(Typical_Employee_Survey_Data$Age, Typical_Employee_Survey_Data$Loyalty, main = "Age vs. Loyalty", xlab = "Age", ylab = "Loyalty")
 ##Age does not seem to have an effect on loyalty to the company, there seems to be an even split of opinions across the different age ranges. Most employees regardless of age said they would be unlikely to turn down a higher paying job to stay at the company.
 
-
+#Overall takeaway: The analysis of the "Typical Employee Survey Data" reveals interesting patterns among employee attributes. The relationship between years worked and job satisfaction shows that long-tenured employees tend to be satisfied, while shorter-tenure employees are more likely to be very satisfied. Additionally, employees with fewer years at the company tend to feel more likely to receive promotions, while those with longer tenures show decreased promotion expectations. Furthermore, age does not seem to significantly impact loyalty, as employees across different age groups have similar responses regarding their willingness to stay or leave the company for a better-paying job.
 
 ```
 
